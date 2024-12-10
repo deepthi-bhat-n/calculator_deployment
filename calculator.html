@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculator</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>My Calculator</h1>
+        <div class="calculator">
+            <input type="text" id="inputtext" name="screen" >
+        </div>
+        <div class="rows">
+        <div class="row">
+            <button type="button" class="all-clear btn" id="clear"  onclick="clr()">
+                C
+            </button>
+            <button type="button" class="delete-key btn" value="DEL" onclick="del()">DEL</button>
+            <button type="button" class="operator btn" id="percentage" value="%" onclick="calculate('%')" >
+                %
+            </button>
+            <button type="button" class="operator btn" id="add" value="+" onclick="calculate('+')">+</button>
+        </div>
+        <div class="row">
+            <button class="btn" type="button" id="seven" value="7" onclick="calculate(7)">7</button>
+            <button class="btn" type="button" id="eight" value="8" onclick="calculate(8)">8</button>
+            <button class="btn" type="button" id="nine" value="9" onclick="calculate(9)">9</button>
+            <button type="button" class="operator btn" id="subtract" value="-" onclick="calculate('-')">
+                -
+            </button>
+        </div>
+        <div class="row">
+            <button class="btn" type="button" id="four" value="4" onclick="calculate(4)">4</button>
+            <button class="btn" type="button" id="five" value="5" onclick="calculate(5)">5</button>
+            <button class="btn" type="button" id="six" value="6" onclick="calculate(6)">6</button>
+            <button type="button" class="operator btn" id="multiply" value="*" onclick="calculate('*')">
+                &times;
+            </button>
+        </div>
+        
+        <div class="row">
+            <button class="btn" type="button" id="three" value="3" onclick="calculate(3)">3</button>
+            <button class="btn" type="button" id="two" value="2" onclick="calculate(2)">2</button>
+            <button class="btn" type="button" id="one" value="1" onclick="calculate(1)">1</button>
+            <button  type="button" class="operator btn" id="divide" value="/" onclick="calculate('/')">
+                &divide;
+            </button>
+        </div>
+        <div class="row">
+            <button class="btn" type="button" id="zero" value="0" onclick="calculate(0)">0</button>
+            
+            <button type="button" class="decimal btn" id="decimal" value="." onclick="calculate('.')">.</button>
+
+            <button type="button" class="equal-sign btn" id="equals" value="=" onclick="answer()">
+                =
+            </button>
+        
+        </div>
+        </div>
+    </div>
+
+</body>
+<script src="index.js"></script>
+
+</html>

@@ -1,0 +1,43 @@
+body{
+    height:100%;
+    width:100%;
+    background-color: gainsboro;
+}
+.container{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.calculator input{
+   width:275px; 
+   font-size: 20px;
+   border: 2px solid black;
+   
+   padding: 10px 0px;
+   border-radius: 5px;
+   
+}
+.rows{
+    background-color:cadetblue;
+    
+
+}
+.row{
+   margin:8px 0; 
+   
+}
+.btn{
+    width:66px;
+    font-weight: bold;
+    font-size: large;
+    border: 2px solid black;
+    padding: 20px;
+    border-radius: 9px;
+  cursor: pointer;
+  background-color: rgb(245, 202, 245);
+}
+.equal-sign{
+    width:135px;
+}
